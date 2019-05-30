@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('hello/{msg}', function ($msg) {
+Route::get('hello/{msg?}', function ($msg = "no message.") {
 
     $html = <<<EOF
     <html>
